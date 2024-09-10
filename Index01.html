@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My BCA Portfolio</title>
+
+    <!-- Embedded CSS -->
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            padding: 1.5rem 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        .about, .skills, .projects, .contact {
+            padding: 2rem;
+            margin: 1rem 0;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        /* Skills Section */
+        .skills-grid {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 1rem;
+        }
+
+        .skill-item {
+            background: #444;
+            color: white;
+            padding: 1rem;
+            border-radius: 5px;
+            width: 20%;
+            text-align: center;
+        }
+
+        /* Projects Section */
+        .project-grid {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1rem;
+            width: 45%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .view-more-btn {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 0.5rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Contact Section */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        input, textarea {
+            padding: 0.5rem;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            padding: 0.5rem;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .modal-content {
+            background: white;
+            margin: 10% auto;
+            padding: 1rem;
+            width: 50%;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .close-btn {
+            float: right;
+            cursor: pointer;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Welcome to My BCA Portfolio</h1>
+            <p>Showcasing Projects and Coursework from Semester 1 & 2</p>
+        </div>
+    </header>
+
+    <section class="about">
+        <h2>About Me</h2>
+        <p>Hi, I am Gohil Karmrajsinh Kiritsinh, currently enrolled in the 3rd semester of BCA. This portfolio showcases my progress in web development and other skills acquired during my BCA journey.</p>
+    </section>
+
+    <section class="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-item">HTML</div>
+            <div class="skill-item">CSS</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My BCA Portfolio</title>
+
+    <!-- Embedded CSS -->
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            padding: 1.5rem 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        .about, .skills, .projects, .contact {
+            padding: 2rem;
+            margin: 1rem 0;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        /* Skills Section */
+        .skills-grid {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 1rem;
+        }
+
+        .skill-item {
+            background: #444;
+            color: white;
+            padding: 1rem;
+            border-radius: 5px;
+            width: 20%;
+            text-align: center;
+        }
+
+        /* Projects Section */
+        .project-grid {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1rem;
+            width: 45%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .view-more-btn {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 0.5rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Contact Section */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        input, textarea {
+            padding: 0.5rem;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            padding: 0.5rem;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .modal-content {
+            background: white;
+            margin: 10% auto;
+            padding: 1rem;
+            width: 50%;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .close-btn {
+            float: right;
+            cursor: pointer;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Welcome to My BCA Portfolio</h1>
+            <p>Showcasing Projects and Coursework from Semester 1 & 2</p>
+        </div>
+    </header>
+
+    <section class="about">
+        <h2>About Me</h2>
+        <p>Hi, I am Gohil Karmrajsinh Kiritsinh, currently enrolled in the 3rd semester of BCA. This portfolio showcases my progress in web development and other skills acquired during my BCA journey.</p>
+    </section>
+
+    <section class="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-item">HTML</div>
+            <div class="skill-item">CSS</div>
+            <div class="skill-item">JavaScript</div>
+            <div class="skill-item">SQL</div>
+            <div class="skill-item">Python</div>
+            <div class="skill-item">C Programming</div>
+        </div>
+    </section>
+
+    <section class="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Library Management System (Semester 2)</h3>
+                <p>A Library Management System built using SQL for database management.</p>
+                <button class="view-more-btn" onclick="openModal('project1')">View Details</button>
+            </div>
+            <div class="project-card">
+                <h3>To-Do List (Semester 1)</h3>
+                <p>A Python-based to-do list that helps manage tasks efficiently.</p>
+                <button class="view-more-btn" onclick="openModal('project2')">View Details</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <p>If you have any questions or want to collaborate, feel free to reach out!</p>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Gohil Karmrajsinh Kiritsinh | BCA Portfolio</p>
+    </footer>
+
+    <!-- Modal Section -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- Embedded JavaScript -->
+    <script>
+        // Modal functionality
+        function openModal(projectId) {
+            const modal = document.getElementById('modal');
+            const modalBody = document.getElementById('modal-body');
+
+            modal.style.display = 'block';
+
+            if (projectId === 'project1') {
+                modalBody.innerHTML = `
+                    <h3>Library Management System</h3>
+                    <p>This project was created to manage books, users, and transactions in a library. Built using SQL for database management.</p>`;
+            } else if (projectId === 'project2') {
+                modalBody.innerHTML = `
+                    <h3>To-Do List</h3>
+                    <p>A Python-based application to help manage daily tasks efficiently and organize priorities.</p>`;
+            }
+        }
+
+        function closeModal() {
+            document.getElementById('modal').style.display = 'none';
+        }
+
+        // Form submission (demo purpose only)
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Message sent!');
+        });
+    </script>
+</body>
+</html>
+￼Enter            <div class="skill-item">JavaScript</div>
+            <div class="skill-item">SQL</div>
+            <div class="skill-item">Python</div>
+            <div class="skill-item">C Programming</div>
+        </div>
+    </section>
+
+    <section class="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Library Management System (Semester 2)</h3>
+                <p>A Library Management System built using SQL for database management.</p>
+                <button class="view-more-btn" onclick="openModal('project1')">View Details</button>
+            </div>
+            <div class="project-card">
+                <h3>To-Do List (Semester 1)</h3>
+                <p>A Python-based to-do list that helps manage tasks efficiently.</p>
+                <button class="view-more-btn" onclick="openModal('project2')">View Details</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <p>If you have any questions or want to collaborate, feel free to reach out!</p>
+  <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Gohil Karmrajsinh Kiritsinh | BCA Portfolio</p>
+    </footer>
+
+    <!-- Modal Section -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- Embedded JavaScript -->
+    <script>
+        // Modal functionality
+        function openModal(projectId) {
+            const modal = document.getElementById('modal');
+            const modalBody = document.getElementById('modal-body');
